@@ -5,3 +5,5 @@
 ____
 ### this project is nothing of itself and was created in a hurry
 ### the reason why I shared it is to expand my horizons in JavaScript
+____
+#### I ran version 6 on an open server, so instead of localhost, the version of MySQL used was written down
