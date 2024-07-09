@@ -1,0 +1,331 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+html, body {
+    height: 100%;
+    overflow-x: hidden;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-width: 320px;
+    background: url('img/background.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+} 
+.wrapper {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+main {
+    display: flex;
+    flex: 1 1 auto;
+    margin: 2% 5%;
+    width: 100%;
+    flex-direction: column;
+} 
+footer {
+    display: flex;
+    bottom: 0;
+    padding: 50px 5%;
+    border-top: 4px solid #162938;
+    justify-content: space-around;
+
+    color: #fff;
+    font-size: 22px;
+    font-family: 'Poppins', sans-serif;
+}
+a {
+    text-decoration: none;
+    color: #fff;
+}
+.header {
+    top: 0;
+    z-index: 100;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    font-size: 2em;
+    color: white;
+    font-family: 'LXGWWenKaiMonoTC-Regular', sans-serif;
+    user-select: none;
+}
+
+.navigation a {
+    position: relative;
+    font-size: 1.1em;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 40px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.navigation a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background-color: #fff;
+    border-radius: 5px;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .5s;
+}
+
+.navigation a:hover::after {
+    transform: scaleX(1);
+}
+
+.navigation .btnLogin-popup, .navigation .btnLoginOut-popup {
+    width: 130px;
+    height: 50px;
+    background-color: transparent;
+    border: 2px solid #fff;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1em;
+    color: #fff;
+    font-weight: 500;
+    margin-left: 40px;
+    transition: .5s;
+}
+
+.navigation .btnLogin-popup:hover {
+    background-color: #fff;
+    color: #162938;
+}
+
+.cinema {
+    display: flex;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    margin: 0 auto;
+}
+table {
+    border: 1px solid #ccc;
+    margin:0;
+    padding:0;
+    border-collapse: collapse;
+    border-spacing: 0;
+    margin: 5%;
+    width: 800px;
+  }
+  
+  table tr {
+    border: 1px solid #ddd;
+    padding: 5px;
+  }
+  
+  table th, table td {
+    color: #fff;
+    background-color: #213d55;
+    font-size: 18px;
+    letter-spacing: 1px;
+    padding: 60px;
+    text-align: center;
+    border-right: 1px solid #ddd;
+  }
+
+  .image-cinema {
+    background-size: cover;
+    background-position: center;
+  }
+
+  .socials {
+    font-size: 32px;
+  }
+
+  .six {
+    margin: auto;
+  }
+  .busy-place {
+    width: 70px;
+    height: 70px;
+    background-color: red;
+    margin: 6px;
+  }
+  .free-place {
+    width: 70px;
+    height: 70px;
+    background-color: green;
+    margin: 6px;
+  }
+
+  .movies-title {
+    font-family: 'LXGWWenKaiMonoTC-Regular', sans-serif;
+    text-transform: uppercase;
+    color: #fff;
+    width: 100%;
+    }
+
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+  }
+  .card {
+    width: 320px;
+    height: 180px;
+    margin: .5%;
+    transition: all 0.4s;
+  }
+  .card:hover {
+    transform: scale(1.05);
+  }
+  .card>a>img {
+    max-width: 320px;
+    max-height: 180px;
+  }
+
+  .screen {
+    width: 100%;
+    margin: auto;
+  }
+  .screen-line {
+    max-width: 818px;
+    border: 12px solid rgba(0, 0, 0, 0.7);
+    margin: 0 auto;
+    margin-top: 50px;
+}
+.screen-glow {
+    max-width: 714px;
+    height: 67px;
+    width: 92%;
+    transform: perspective(10px) rotateX(1deg);
+    margin: -2px auto 20px auto;
+    background: linear-gradient(180deg, rgba(255 255 255 / 100%) 0%, rgba(196, 196, 196, 0.1) 100%);
+}
+.btn-send-id {
+    max-width: 400px;
+    margin: auto;
+
+    color: #fff;
+    font-size: 20px;
+    font-family: 'LXGWWenKaiMonoTC-Regular', sans-serif;
+    text-align: center;
+}
+.send-id {
+    color: #fff;
+    background-color: #213d55;
+    border: none;
+    padding: 6px;
+    border-radius: 8px;
+    font-size: 18px;
+}
+.please-log {
+    background-color: #162938;
+    padding: 8px;
+    border-radius: 6px;
+}
+.selected {
+    background-color: rgb(0, 55, 0);
+}
+
+
+.thumb-wrap iframe {
+    object-fit: cover;
+    top: 0;
+    left: 0;
+    width: 60%;
+    height: 60%;
+    aspect-ratio: 16 / 9;
+}
+h3 {
+    color: #fff;
+    font-size: 26px;
+    font-family: 'Poppins', sans-serif;
+    background-color: #162938;
+    padding: 12px;
+    max-width: 400px;
+    border-radius: 12px;
+    text-align: center;
+    font-style: italic;
+}
+
+@media(max-width: 1568px) {
+    .header {
+        padding: 20px 20px;
+    }
+    main {
+        margin: 0;
+    }
+    .navigation a {
+        font-size: 20px;
+        padding: 0;
+        line-height: 36px;
+    }
+    .thumb-wrap iframe {
+        width: 80%;
+        height: 80%;
+    }
+    table {
+        width: 500px;
+        margin: 0.5%;
+    }
+    table th, table td {
+        padding: 30px;
+    }
+}
+@media(max-width: 1168px) {
+    .cinema {
+    flex-wrap: wrap;
+    }
+}
+@media(max-width: 767px) {
+    body:before {
+        background-color:rgba(0, 0, 0, .5);
+    }
+    .navigation .btnLogin-popup {
+        margin-top: 4%;
+    }
+    table {
+        width: 400px;
+    }
+    footer {
+        flex-direction: column;
+        font-size: 18px;
+        line-height: 36px;
+    }
+    .busy-place {
+        width: 50px;
+        height: 50px;
+    }
+    .free-place {
+        width: 50px;
+        height: 50px;
+    }
+    table th, table td {
+        padding: 20px;
+        font-size: 16px;
+    }
+    .movies-title {
+        text-align: center;
+        background-color: #162938;
+    }
+    .card {
+        margin: .8% auto;
+    }
+    .thumb-wrap iframe {
+        width: 95%;
+        height: 95%;
+    }
+    h3 {
+        font-size: 18px;
+        max-width: 350px;
+    }
+}
+
+
+@font-face {
+    font-family: 'LXGWWenKaiMonoTC-Regular';
+    src: url(fonts/LXGWWenKaiMonoTC-Regular.ttf);
+}
